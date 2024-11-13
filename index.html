@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- div for margin from sides     -->
+                </div>
+                <div class="col-md-4 mt-5">
+                    <center>
+                        <h1 id="heading">Todo List</h1>
+                        <form action="add.php" method="post">
+                            <input id="AddTask" type="text" name="task" class="form-control text-white" placeholder="Enter Task" required>
+                            <button type="submit" onclick="addtask()" class="btn mt-2 form-control bg-black text-white">Add Task</button>
+                            <ul id="tasklist"></ul>
+                        </form>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <!-- div for margin from sides     -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed by Mehul Bhargav</p>
+        <p>
+            <a href="https://www.linkedin.com/in/mrmehulbhargav" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/mrMehulbhargav" target="_blank">GitHub</a> |
+            <a href="https://leetcode.com/u/mrmehulbhargav/" target="_blank">LeetCode</a>
+        </p>
+    </footer>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="Js/Script.js"></script>
+</body>
+</html>
